@@ -38,7 +38,7 @@ class _Result {
   String? _poster_path;
   String? _original_language;
   String? _original_title;
-  List<int> _genre_ids = [];
+  final List<int> _genre_ids = [];
   String? _backdrop_path;
   bool? _adult;
   String? _overview;
