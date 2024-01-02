@@ -5,12 +5,12 @@ import '../models/item_model.dart';
 
 class MovieApiProvider {
   Client client = Client();
-  final String _apiKey = '4f569d54d12d75e5ffe324fd751ea277';
+  final _apiKey = '4f569d54d12d75e5ffe324fd751ea277';
 
   Future<ItemModel> fetchMovieList() async {
     print("entered");
-    final response = await client.get(
-        "http://api.themoviedb.org/3/movie/popular?api_key=$_apiKey" as Uri);
+    final response = await client.get(Uri.parse(
+        "http://api.themoviedb.org/3/movie/popular?api_key=$_apiKey"));
     print(response.body.toString());
     if (response.statusCode == 200) {
       // If the call to the server was successful, parse the JSON
