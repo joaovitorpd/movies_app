@@ -1,7 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api
 
 class TrailerModel {
-  int _id = 0;
+  int? _id;
   List<_Result> _results = [];
 
   TrailerModel(this._id, this._results);
@@ -18,7 +18,7 @@ class TrailerModel {
 
   List<_Result> get results => _results;
 
-  int get id => _id;
+  int? get id => _id;
 }
 
 class _Result {

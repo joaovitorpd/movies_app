@@ -30,7 +30,7 @@ class ItemModel {
 
 class _Result {
   int? _vote_count;
-  int _id = 0;
+  int? _id;
   bool? _video;
   double? _vote_average;
   String? _title;
@@ -87,7 +87,7 @@ class _Result {
 
   bool? get video => _video;
 
-  int get id => _id;
+  int? get id => _id;
 
   int? get vote_count => _vote_count;
 }

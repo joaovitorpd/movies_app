@@ -12,7 +12,7 @@ class MovieDetail extends StatefulWidget {
   final String? releaseDate;
   final String? title;
   final String? voteAverage;
-  final int movieId;
+  final int? movieId;
 
   MovieDetail({
     this.title,
@@ -20,7 +20,7 @@ class MovieDetail extends StatefulWidget {
     this.description,
     this.releaseDate,
     this.voteAverage,
-    required this.movieId,
+    this.movieId,
   });
 
   @override
@@ -42,7 +42,7 @@ class MovieDetailState extends State<MovieDetail> {
   final String? releaseDate;
   final String? title;
   final String? voteAverage;
-  final int movieId;
+  final int? movieId;
 
   late MovieDetailBloc bloc;
 
@@ -52,7 +52,7 @@ class MovieDetailState extends State<MovieDetail> {
     this.description,
     this.releaseDate,
     this.voteAverage,
-    required this.movieId,
+    this.movieId,
   });
 
   @override
