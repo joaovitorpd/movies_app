@@ -1,6 +1,8 @@
 # movies_app
 
-A new Flutter project.
+"Application to preview information about movies before watching them, in order to determine if it aligns with the user's preferences, based on the www.themoviedb.org API."
+
+By: joaovitorpd
 
 ## Getting Started
 
